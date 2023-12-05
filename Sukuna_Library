@@ -182,4 +182,4 @@
 
 
 
-loadstring(game:HttpGet("https://pastebin.pl/view/raw/b201d657"))()
+loadstring(game:HttpGet("https://pastebin.pl/view/raw/d47b05c0"))()
