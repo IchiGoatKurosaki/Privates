@@ -465,6 +465,14 @@ Tab:AddButton({
   end    
 })
 
+Tab:AddButton({
+	Name = "SAO",
+	Callback = function()
+    game:GetService("Players").LocalPlayer.World.Value = "SAO" 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3318.84619, 169.605972, -10834.5049, -0.265798062, -2.77698078e-08, 0.964028716, -3.92108523e-09, 1, 2.77248908e-08, -0.964028716, 3.58918362e-09, -0.265798062)
+  
+  end    
+})
 
 local Tab = Window:MakeTab({
 	Name = "Huong Dan",
