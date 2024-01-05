@@ -203,6 +203,26 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
 
+if game.Players.LocalPlayer.Name == "derrdtryt" then 
+  while task.wait() do 
+ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Windows.Pets.PetList:GetChildren()) do 
+      if v:IsA('Frame') then 
+ local args = {
+    [1] = v:GetAttribute("GUID"),
+    [2] = {
+        [1] = v:GetAttribute("GUID")
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Data"):WaitForChild("FusePets"):FireServer(unpack(args))
+
+
+      end
+      end 
+end
+ else 
+end 
+
  if game.Players.LocalPlayer.Name == "Kietcknss" or 
  game.Players.LocalPlayer.Name == "Tak_Gin" or 
  game.Players.LocalPlayer.Name == "A1tForSmurfing" or 
